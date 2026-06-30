@@ -1,23 +1,52 @@
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>غزة ماركت - Gaza Market</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBVn8fXTHazhowV7KI3OrOyIJGggBM2noU",
-    authDomain: "gaza-market-fb74f.firebaseapp.com",
-    projectId: "gaza-market-fb74f",
-    storageBucket: "gaza-market-fb74f.firebasestorage.app",
-    messagingSenderId: "320885959890",
-    appId: "1:320885959890:web:5d5c577a93798cc246110b",
-    measurementId: "G-GCY9XMGPPL"
-  };
+    <h1>مرحباً بك في غزة ماركت! 🛒</h1>
+    <p>الموقع قيد الإنشاء وتم ربطه بـ Firebase بنجاح.</p>
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.15.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBVn8fXTHazhowV7KI3OrOyIJGggBM2noU",
+        authDomain: "gaza-market-fb74f.firebaseapp.com",
+        projectId: "gaza-market-fb74f",
+        storageBucket: "gaza-market-fb74f.firebasestorage.app",
+        messagingSenderId: "320885959890",
+        appId: "1:320885959890:web:5d5c577a93798cc246110b",
+        measurementId: "G-GCY9XMGPPL"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      
+      console.log("Firebase تم تشغيله بنجاح!");
+    </script>
+
+</body>
+</html>
